@@ -49,3 +49,29 @@ html {
     --fw-700: 700;
     --fw-800: 800;
 }
+
+/*  visible only to screen readers */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/*  Utility Classes  */
+
+.container {
+    max-width: 133rem;
+    margin-inline: auto;
+}
+
+.grid {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
