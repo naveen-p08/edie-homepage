@@ -1,0 +1,51 @@
+/*font-family: 'Heebo', sans-serif;*/
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Poppins', sans-serif;*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    color: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+}
+
+img,
+picture {
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%; /*Resets base font to 10px*/
+}
+
+:root {
+    /*    Colors    */
+    --clr-blue: 202 71% 52%; /*#2D9CDB*/
+    --clr-green: 145 63% 42%; /* #27AE60 */
+    --clr-red: 0 79% 63%; /*#EB5757*/
+    --clr-dark-gray: 0 0% 20%; /* #333333 */
+    --clr-semi-light-gray: 0 0% 31%; /* #4F4F4F*/
+    --clr-light-gray: 0 0% 51%; /* #828282 */
+    --clr-gray-white: 0 0% 95%; /* #F2F2F2 */
+    --clr-dark-gray-white: 0 0% 88%; /* #E0E0E0 */
+    --clr-xlight-gray: 0 0% 74%; /* #BDBDBD */
+    --clr-white: 0 0% 100%;
+    --clr-dark-blue: 248 35% 8%; /* #100E1D */
+
+    /*    Font Family   */
+    --ff-heebo: 'Heebo', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+    --ff-montserrat: 'Montserrat', sans-serif;
+
+    /*    Font Weight   */
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-800: 800;
+}
