@@ -75,3 +75,8 @@ html {
     justify-items: center;
     align-items: center;
 }
+
+
+body {
+    padding-inline: 1rem;
+}
