@@ -177,11 +177,11 @@ header {
         cursor: pointer;
     }
 
-    .nav-toggle img[data-open='false'] {
+    .nav-toggle img {
         display: block;
     }
 
-    .nav-toggle img[data-open='true'] {
+    .nav-toggle img.open {
         display: none;
     }
 
@@ -195,25 +195,20 @@ header {
         /*padding-block: 4rem;*/
         text-align: center;
         border-radius: 1rem;
-        transform: translateY(-15px);
-        opacity: 0;
-        transition: transform 300ms ease, opacity 150ms ease 150ms;
     }
 
-    .primary-navigation[aria-expanded='false'] {
+    .primary-navigation[data-visible='false'] {
         height: 0;
         padding-block: 0;
         overflow: hidden;
         pointer-events: none;
     }
 
-    .primary-navigation[aria-expanded='true'] {
+    .primary-navigation[data-visible='true'] {
         height: auto;
         padding-block: 4rem;
         overflow: visible;
         pointer-events: auto;
-        opacity: 1;
-        transform: translateY(0);
     }
 
     .nav-list.grid {

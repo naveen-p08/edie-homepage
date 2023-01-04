@@ -27,6 +27,9 @@
     <!--  Stylesheet    -->
     <link href="style.css" rel="stylesheet">
 
+    <!--    Scripts      -->
+    <script src="main.js" type="text/javascript" defer></script>
+
 </head>
 <body class="container-xl">
 <header class="grid">
@@ -34,13 +37,13 @@
         Edie
     </div>
 
-    <button id="nav-toggle" class="nav-toggle" aria-controls="primary-navigation">
+    <button id="nav-toggle" class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
         <span class="visually-hidden">Menu</span>
-        <img src="images/menu.svg" aria-hidden="true" data-open="false" alt="">
-        <img src="images/close.svg" aria-hidden="true" data-open="true" alt="">
+        <img class="" src="images/menu.svg" aria-hidden="true" alt="">
+        <img class="open" src="images/close.svg" aria-hidden="true" alt="">
     </button>
 
-    <nav class="primary-navigation" id="primary-navigation" aria-label="primary navigation" aria-expanded="false">
+    <nav class="primary-navigation" id="primary-navigation" aria-label="primary navigation" data-visible="false">
         <ul class="nav-list grid">
             <li class="nav-list__items"><a href="#">Home</a></li>
             <li class="nav-list__items"><a href="#">Services</a></li>
