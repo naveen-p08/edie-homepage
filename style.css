@@ -99,6 +99,12 @@ body {
     font-weight: var(--fw-500);
 }
 
+h1,
+h2,
+h3 {
+    color: hsl(var(--clr-dark-gray));
+}
+
 /*region Header*/
 header {
     margin-top: clamp(1.5rem, 5vw, 4rem);
@@ -231,6 +237,83 @@ header {
     .nav-list__items a::after {
         background: hsl(var(--clr-white) / 0.6);
     }
+}
+
+/*endregion*/
+
+/*region Main Section*/
+
+main {
+    margin-bottom: clamp(10rem, 20vw, 20rem);
+}
+
+.tagline {
+    font-size: var(--fs-200);
+    color: hsl(var(--clr-blue));
+    line-height: 18px;
+}
+
+.heading h1 {
+    font-size: var(--fs-600);
+    line-height: 36px;
+}
+
+.hero-img {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-block: clamp(1.6rem, 5vw, 4rem);
+}
+
+.heading-info h2 {
+    font-size: var(--fs-600);
+    line-height: 36px;
+}
+
+.heading-info > p {
+    font-size: var(--fs-200);
+    color: hsl(var(--clr-semi-light-gray));
+    line-height: 18px;
+    font-weight: var(--fw-400);
+    margin-block: clamp(2rem, 4vw, 3.5rem);
+}
+
+.signup {
+    position: relative;
+    --padding-y: 0.75em;
+    --padding-btn-y: .5em;
+}
+
+.signup p {
+    font-size: var(--fs-100);
+    color: hsl(var(--clr-light-gray));
+    line-height: 15px;
+    margin-bottom: 1rem;
+}
+
+.signup input {
+
+    color: hsl(var(--clr-xlight-gray));
+    font-size: var(--fs-300);
+    padding: var(--padding-y) 1.2em;
+    padding-right: 6em;
+    border: none;
+    outline: none;
+    border-radius: 1.2rem;
+    background: hsl(var(--clr-gray-white));
+    width: 100%;
+}
+
+.signup button {
+    position: absolute;
+    right: 0.3em;
+    bottom: calc((var(--padding-y) - var(--padding-btn-y)) );
+    font-size: var(--fs-300);
+    color: hsl(var(--clr-gray-white));
+    background: hsl(var(--clr-blue));
+    padding: var(--padding-btn-y) 1em;
+    border: none;
+    outline: none;
+    border-radius: 1.2rem;
 }
 
 /*endregion*/
