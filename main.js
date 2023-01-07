@@ -4,6 +4,9 @@ const navToggleIcon = document.querySelectorAll('#nav-toggle img')
 const navLists = document.querySelectorAll('.nav-list__items')
 
 
+const servicesOptions = document.querySelectorAll('.services-options > div')
+const servicesButton = document.querySelectorAll('.services-button')
+
 navToggle.addEventListener('click', ()=> {
     navToggleCheck()
 
@@ -32,6 +35,19 @@ function navToggleCheck() {
 }
 
 
+//https://www.youtube.com/watch?v=Mxw6W4MR0oU for review
+servicesOptions.forEach(option=> {
 
+    option.addEventListener('click',()=> {
+
+        //removes active class from all divs inside service option container
+        servicesOptions.forEach(element=>{
+        element.classList.remove('active')
+        })
+
+        //adds active class to the selected container
+        option.classList.add('active')
+    })
+})
 
 
