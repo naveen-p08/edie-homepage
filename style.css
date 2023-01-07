@@ -328,7 +328,88 @@ main {
     background: hsl(var(--clr-blue) / 0.7);
 }
 
+/*region Services*/
 
+.services {
+    margin-bottom: clamp(10rem, 15vw, 15rem);
+}
+
+.services > h2 {
+    font-size: var(--fs-600);
+    margin-bottom: 4rem;
+}
+
+.services-options {
+    display: grid;
+    grid-gap: 4rem;
+}
+
+.services-options > div{
+    padding: 4.5rem 3rem;
+    border: 1px solid transparent;
+    border-radius: 2.4rem;
+}
+
+.services-icon {
+    width: max-content;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.services-options h3 {
+    font-size: var(--fs-600);
+    font-weight: var(--fw-700);
+}
+
+.icon-blue {
+    background: hsl(var(--clr-blue));
+}
+
+.icon-green {
+    background: hsl(var(--clr-green));
+}
+
+.icon-red {
+    background: hsl(var(--clr-red));
+}
+
+.services-options p {
+    font-size: var(--fs-400);
+    color: hsl(var(--clr-semi-light-gray));
+    font-weight: var(--fw-400);
+    line-height: 24px;
+    margin-block: 2rem 3rem;
+}
+
+.services-button {
+    font-size: var(--fs-400);
+    color: hsl(var(--clr-light-gray));
+    padding: 0.6em 0.9em;
+    border: 1px solid transparent;
+    outline: none;
+    background: hsl(var(--clr-dark-gray-white));
+    border-radius: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.services-button:where(:hover, :focus) {
+    opacity: 0.8;
+}
+
+.services-options div.active {
+    box-shadow: 0 10px 30px 0 hsl(var(--clr-dark-gray) / 0.1);
+}
+
+.services-button.active {
+    color: hsl(var(--clr-white));
+    background: hsl(var(--clr-blue));
+}
+
+/*endregion*/
 
 /*endregion*/
 
