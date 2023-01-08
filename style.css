@@ -189,6 +189,10 @@ header {
         cursor: pointer;
     }
 
+    .nav-toggle:where(:hover,:focus) {
+        outline: 2px solid hsl(var(--clr-blue));
+    }
+
     .nav-toggle img {
         display: block;
     }
@@ -614,15 +618,20 @@ main {
 .socials ul a {
     border-bottom: 2px solid transparent;
     transition: border 250ms ease;
+
 }
 
 .socials ul a:where(:hover, :focus) {
     border-color: hsl(var(--clr-red));
+
 }
+
+
 
 .attribution {
     text-align: center;
     font-weight: var(--fw-400);
+    font-size: var(--fs-300);
 }
 
 .attribution a {
@@ -757,5 +766,19 @@ main {
         max-width: 40ch;
     }
     /*endregion*/
+
+    .footer-container {
+        gap: 10rem;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+    }
+
+    .footer-signup p {
+        color: hsl(var(--clr-gray-white));
+        font-size: var(--fs-300);
+    }
 
 }
