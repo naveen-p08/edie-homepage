@@ -93,7 +93,7 @@ html {
 
 
 body {
-    padding-inline: 1rem;
+
     font-family: var(--ff-poppins);
     font-weight: var(--fw-500);
 }
@@ -104,6 +104,12 @@ h3,
 h4 {
     color: hsl(var(--clr-dark-gray));
 }
+@media (max-width: 44.99em) {
+    .padding-x1 {
+        padding-inline: 1rem;
+    }
+}
+
 
 /*region Header*/
 header {
@@ -296,11 +302,12 @@ main {
     font-size: var(--fs-300);
     padding: var(--padding-y) 1.2em;
     padding-right: 6em;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     outline: none;
     border-radius: 1.2rem;
     background: hsl(var(--clr-gray-white));
     width: 100%;
+    transition: border 250ms ease;
 }
 
 .signup input:focus {
@@ -310,7 +317,7 @@ main {
 .signup button {
     position: absolute;
     right: 0.3em;
-    bottom: calc((var(--padding-y) - var(--padding-btn-y)) + 1px);
+    bottom: calc((var(--padding-y) - var(--padding-btn-y)) + 2px);
     font-size: var(--fs-300);
     color: hsl(var(--clr-gray-white));
     background: hsl(var(--clr-blue));
@@ -516,6 +523,7 @@ main {
 /*endregion*/
 
 
+/*region Testimonial*/
 .testimonial {
     margin-bottom: clamp(10rem, 20vw, 20rem);
 }
@@ -554,6 +562,74 @@ main {
     color: hsl(var(--clr-light-gray));
     line-height: 27px;
 }
+/*endregion*/
+
+/*region Footer*/
+
+.primary-footer {
+    padding-inline: 5rem;
+    padding-block: 4rem 3rem;
+    background: hsl(var(--clr-dark-blue));
+    color: hsl(var(--clr-gray-white));
+}
+
+.footer-container {
+    display: grid;
+    gap: 5rem;
+}
+
+.footer-content {
+    display: grid;
+    gap: 6rem;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-nav a {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-400);
+    color: hsl(var(--clr-white));
+    line-height: 36px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border 250ms ease;
+}
+
+.footer-nav a:where(:hover, :focus) {
+    border-color: hsl(var(--clr-red));
+}
+
+.footer-logo {
+    font-size: var(--fs-700);
+    line-height: 54px;
+}
+
+.socials ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.socials ul a {
+    border-bottom: 2px solid transparent;
+    transition: border 250ms ease;
+}
+
+.socials ul a:where(:hover, :focus) {
+    border-color: hsl(var(--clr-red));
+}
+
+.attribution {
+    text-align: center;
+    font-weight: var(--fw-400);
+}
+
+.attribution a {
+    font-weight: var(--fw-700);
+}
+
+/*endregion*/
 
 
 
@@ -674,10 +750,12 @@ main {
     }
     /*endregion*/
 
+    /*region Testimonial*/
     .review {
         font-size: var(--fs-700);
         line-height: 54px;
         max-width: 40ch;
     }
+    /*endregion*/
 
 }
