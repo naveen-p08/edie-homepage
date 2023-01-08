@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://root9259.github.io/edie-homepage/">
       Demo
     </a>
     <span> | </span>
@@ -38,7 +38,7 @@
 
 ![screenshot](edie-homepage.png)
 
-The demo can be Viewed [here]()
+The demo can be Viewed [here](https://root9259.github.io/edie-homepage/)
 
 [//]: # (- Where can I see your demo?)
 
