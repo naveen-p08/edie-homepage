@@ -503,6 +503,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
+    justify-items: start;
     gap: 1rem;
 }
 
@@ -618,6 +619,17 @@ main {
     }
 
 
+    /*endregion*/
+
+    /*region team*/
+    .team {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .team-headshots {
+        gap: 2rem;
+    }
     /*endregion*/
 
 }
