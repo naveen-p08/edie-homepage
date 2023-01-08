@@ -104,7 +104,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4{
     color: hsl(var(--clr-dark-gray));
 }
 
@@ -328,6 +329,8 @@ main {
     background: hsl(var(--clr-blue) / 0.7);
 }
 
+/*endregion*/
+
 /*region Services*/
 
 .services {
@@ -418,6 +421,39 @@ main {
 }
 
 /*endregion*/
+
+/*region Projects*/
+
+.projects > h2 {
+    font-size: var(--fs-600);
+    line-height: 36px;
+    margin-bottom: 5rem;
+}
+
+.projects-list {
+    display: grid;
+    gap: 4rem;
+}
+
+.project-image {
+    margin-bottom: clamp(1rem, 2vw, 2rem);
+}
+
+.project-image img {
+    border-radius: 2.4rem;
+}
+
+.projects-list__items p {
+    font-size: var(--fs-200);
+    line-height: 18px;
+    font-weight: var(--fw-300);
+    color: hsl(var(--clr-light-gray));
+}
+
+.projects-list__items h4 {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-500);
+}
 
 /*endregion*/
 
